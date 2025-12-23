@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Registro | Conquer Blocks</title>
+  <meta name="description" content="Formulario de registro de nuevos usuarios en la academia Conquer Blocks.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="img/common/logotipo-conquer-blocks.avif" alt="Logo Conquer Blocks" width="150">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li>Registro</li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <section>
+      <h1>Formulario de Registro</h1>
+      <p>Completa el siguiente formulario para crear tu cuenta como estudiante en Conquer Blocks.</p>
+
+      <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Datos personales</legend>
+
+          <label for="nombre">Nombre completo:</label><br>
+          <input type="text" id="nombre" name="nombre" required><br><br>
+
+          <label for="fecha">Fecha de nacimiento:</label><br>
+          <input type="date" id="fecha" name="fecha" required><br><br>
+
+          <label for="email">Correo electrónico:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="direccion">Dirección:</label><br>
+          <input type="text" id="direccion" name="direccion"><br><br>
+
+          <label for="web">Página web (opcional):</label><br>
+          <input type="url" id="web" name="web"><br><br>
+
+          <label for="foto">Foto:</label><br>
+          <input type="file" id="foto" name="foto" accept="image/*"><br><br>
+
+          <label for="bio">Biografía:</label><br>
+          <textarea id="bio" name="bio" rows="5" cols="40" placeholder="Cuéntanos un poco sobre ti..."></textarea><br><br>
+
+          <input type="submit" value="Registrarse">
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Conquer Blocks. Todos los derechos reservados.</p>
+    <p><a href="aviso-legal.html">Aviso legal</a></p>
+  </footer>
+
+</body>
+</html>
