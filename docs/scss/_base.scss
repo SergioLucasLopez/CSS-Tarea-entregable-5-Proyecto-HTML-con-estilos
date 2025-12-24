@@ -1,0 +1,88 @@
+@use "variables" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: $font-sans;
+  color: $color-ink;
+  background: $color-bg;
+  line-height: 1.6;
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  color: $color-brand;
+}
+
+p {
+  margin: 0 0 $space-4;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 $space-3;
+  line-height: 1.2;
+}
+
+h1 {
+  font-family: $font-display;
+  font-size: clamp(2rem, 6vw, 3rem);
+}
+
+h2 {
+  font-size: clamp(1.4rem, 4vw, 2rem);
+}
+
+h3 {
+  font-size: clamp(1.1rem, 3vw, 1.4rem);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+main {
+  padding: $space-6 $space-4 $space-7;
+}
+
+section {
+  margin-bottom: $space-7;
+}
+
+figure {
+  margin: $space-4 0;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: $color-muted;
+  margin-top: $space-2;
+}
+
+::selection {
+  background: rgba(15, 118, 110, 0.2);
+}
